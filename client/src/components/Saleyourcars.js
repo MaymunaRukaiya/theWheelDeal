@@ -30,7 +30,7 @@ const Saleyourcars = () => {
 
             <header className="header">
             <div id="menu-btn" className="fas fa-bars"></div>
-            <NavLink className="logo" to="/"> <span>The Wheel Deal</span> Club </NavLink>
+            <NavLink className="logo" to="/"> <span>The Wheel Deal</span> </NavLink>
 
             <nav className="navbar">
                 <NavLink  to="/">Home</NavLink>

@@ -73,7 +73,7 @@ const Home = () => {
         }
     }
 
-    
+
     
     const Loginbutton= () =>{
         
@@ -123,9 +123,9 @@ const Home = () => {
 <section className="home" id="home">
 
 <h3 data-speed="-2" className="home-parallax">Find your car</h3>
+<h4 data-speed="-2" className="home-paralla">Travel hassle-free</h4>
 
 <img data-speed="5" className="home-parallax" src="/image/home-img1.png" alt=""/>
-
 <NavLink className="btn" to="/exploreSaleCars">Explore Cars for Sale</NavLink>{" "}
 <NavLink className="btn" to="/exploreRentCars">Explore Cars for Rent</NavLink>
 
@@ -136,7 +136,7 @@ const Home = () => {
 <div className="icons">
     <i className="fas fa-home"></i>
     <div className="content">
-        <h3>50+</h3>
+        <h3>7+</h3>
         <p>Branches</p>
     </div>
 </div>
@@ -144,7 +144,7 @@ const Home = () => {
 <div className="icons">
     <i className="fas fa-car"></i>
     <div className="content">
-        <h3>770+</h3>
+        <h3>460+</h3>
         <p>Cars sold</p>
     </div>
 </div>
@@ -152,7 +152,7 @@ const Home = () => {
 <div className="icons">
     <i className="fas fa-users"></i>
     <div className="content">
-        <h3>520+</h3>
+        <h3>410+</h3>
         <p>Happy clients</p>
     </div>
 </div>
@@ -160,7 +160,7 @@ const Home = () => {
 <div className="icons">
     <i className="fas fa-car"></i>
     <div className="content">
-        <h3>700+</h3>
+        <h3>560+</h3>
         <p>New cars</p>
     </div>
 </div>
@@ -169,7 +169,7 @@ const Home = () => {
 
 <section className="services" id="services">
 
-<h1 className="heading"> Our <span>services</span> </h1>
+<h1 className="heading"> Our <span>Services</span> </h1>
 
 <div className="box-container">
 

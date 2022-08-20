@@ -140,11 +140,11 @@ const Loginbutton= () =>{
       </div>
     </nav>
     <div className="home-content" style={{textAlign:"center"}}>
-      <h1>WELCOME TO DASHBOARD</h1><br/><br/>
-      <h3>Go To Add Cars Tab In Side Menu To Add Cars In Database</h3><br/><br/>
-      <h3>Go To Sale Cars Tab In Side Menu To Generate Income Reports of Sold Cars In Database</h3><br/><br/>
-      <h3>Go To Rent Cars Tab In Side Menu To Generate Income Reports of Rented Cars In Database</h3><br/><br/>
-      <h3>Go To Available Users Tab In Side Menu To See All Available Users Regestered In Database</h3><br/><br/>
+      <h1>WELCOME TO DASHBOARD</h1><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <h3>~You are now in the Admin Panel of The Wheel Deal~</h3><br/><br/>
+      <h3>To access the features of Admin, click on the sections in the Sidebar </h3><br/><br/>
+      <h3>Before making any changes, check multiple times as you won't be able to recover it afterwards</h3><br/><br/>
+      <h3>Customers Feedback is in User's Messages</h3><br/><br/>
       </div>
 
   </section>

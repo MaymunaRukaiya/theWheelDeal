@@ -20,7 +20,7 @@
 .firstcontainer{
   max-width: 700px;
   width: 100%;
-  background-color: #a0bbdf;
+  background-color: #b1bba3;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(250, 249, 249, 0.816);
@@ -150,3 +150,42 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+a:link{
+  text-decoration: none;
+}
+.btn{
+  border-radius: 10px;
+}
+.btn:hover{
+  color:#b1bba3;
+  background:#28282B;
+  border:#39524f;
+  border-radius: 10px;
+}
+.header{
+  background-color:#b1bba3;
+}
+.nav-link{
+color:#28282B;
+
+}
+/*.btn{
+  background-color: white;
+  border: none;
+  color: #28282B;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+ 
+  border-radius: 12px;
+}
+
+.btn:hover{
+  background:#28282B;
+  color: white;
+}
+*/
