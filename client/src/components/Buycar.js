@@ -14,7 +14,7 @@ const Buycar = () => {
         try {
 
             if(!state){
-                window.alert("Please signin to see all available cars for sale!")
+                window.alert("Please sign in to see all available cars for sale!")
                 history.push('/signin')
             }
 
@@ -92,7 +92,7 @@ const Buycar = () => {
             window.alert("Something went wrong");
         }
         else{
-            window.alert("Item added. Please click on Go To cart to complete the purchase");
+            window.alert("Item added, Please click on Go To cart to complete the purchase");
         }
 
     }
@@ -103,12 +103,12 @@ const Buycar = () => {
         
         if(state){
             return <div> 
-                <button ><NavLink className="btn" to="/signout">logout</NavLink></button>      
+                <button ><NavLink className="btn" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button ><NavLink className="btn" to="/signin">login</NavLink></button>
+                    <button ><NavLink className="btn" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -159,12 +159,12 @@ const Buycar = () => {
 
                 <div id="menu-btn" className="fas fa-bars"></div>
 
-                <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+                <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
 
                 <nav className="navbar">
                     <NavLink  to="/">Home</NavLink>
                     <NavLink to="/rentcar">Rent Cars</NavLink>
-                    <NavLink to="/mycart">Go To Cart</NavLink>         
+                    <NavLink to="/mycart">Go to Cart</NavLink>         
 
                     <input type="text" name="name" value={searchText} onChange={(e)=>setSearchText(e.target.value)} placeholder="Search Car" style={{ width: "30%", height: "8%"}} className="btn"/>
                     <button type="submit" onClick={searchTextBtn} className="btn"><i className="fa fa-search"></i></button>
@@ -190,7 +190,7 @@ const Buycar = () => {
                             <div className='griddiv'>
                             <button id={index} className='cardbtn' onClick={showSpecs}>Specifications</button>
                             <form method="POST" >
-                            <input type="submit" className='cardbtn' value="Add To Cart" id={saleCarsData._id} onClick={addToCart}/>
+                            <input type="submit" className='cardbtn' value="Add to Cart" id={saleCarsData._id} onClick={addToCart}/>
                             </form>
                             </div>
 
@@ -210,7 +210,7 @@ const Buycar = () => {
 
                             <div className='griddiv'>
                             <button  className='cardbtn'><NavLink  to={{pathname: '/carreviews', state:{id: saleCarsData._id}}} >Car Reviews</NavLink></button>
-                            <button className='cardbtn' id = {index} onClick={showCar}>show car</button>
+                            <button className='cardbtn' id = {index} onClick={showCar}>Show cars</button>
                             </div>
                         </div>]
                     

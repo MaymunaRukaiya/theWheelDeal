@@ -28,11 +28,11 @@ const AdminSignin = () => {
         const data = res.json();
 
         if(res.status === 400 || !data){
-            window.alert("invalid Credentials");
+            window.alert("Invalid Credentials");
         }
         else{
             dispatchadmin({type: "ADMIN", payload:true})
-            window.alert("Signin Successfull");
+            window.alert("Sign in Successful");
             adminHistory.push("/dashboard");
         }
     }
@@ -47,19 +47,19 @@ const AdminSignin = () => {
 
 <div id="menu-btn" className="fas fa-bars"></div>
 
-<a href="#" className="logo"> <span>cars</span>Club </a>
+<a href="#" className="logo"> <span>The Wheel</span> Deal </a>
 
 <nav className="navbar">
 <NavLink className="nav-link" to="/">Home</NavLink>
-    <a href="#vehicles">vehicles</a>
-    <a href="#services">services</a>
-    <a href="#featured">featured</a>
-    <a href="#reviews">reviews</a>
-    <a href="#contact">contact</a>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#services">Services</a>
+    <a href="#featured">Featured</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div id="login-btn">
-    <button className="btn"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+    <button className="btn"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
 </div>
 
 </header>
@@ -89,7 +89,7 @@ const AdminSignin = () => {
                                     <input type="submit" value="signin" onClick={signinAdmin} />
                                 </div>
                             </form>
-                            <button className="btn"><NavLink className="nav-link" to="/signin">Signin As User</NavLink></button>
+                            <button className="btn"><NavLink className="nav-link" to="/signin">Sign in as User</NavLink></button>
                         </div>
                     </div>
                 </div>

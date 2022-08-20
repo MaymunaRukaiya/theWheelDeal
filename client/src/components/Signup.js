@@ -47,8 +47,8 @@ const Signup = () => {
             console.log("Invalid Registration");
         } 
         else{
-            window.alert("Registration successfull");
-            console.log("Registration successfull");
+            window.alert("Registration successful");
+            console.log("Registration successful");
 
             history.push("/");
         }
@@ -60,16 +60,16 @@ const Signup = () => {
 
 <div id="menu-btn" className="fas fa-bars"></div>
 
-<NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+<NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
 
 <nav className="navbar">
     <NavLink  to="/">Home</NavLink>
-    <NavLink  to="/exploreSaleCars">Explore-Sale-Cars</NavLink>
-    <NavLink  to="/exploreRentCars">Explore-Rent-Cars</NavLink>
+    <NavLink  to="/exploreSaleCars">Explore Cars for Sale</NavLink>
+    <NavLink  to="/exploreRentCars">Explore Cars for Rent</NavLink>
 </nav>
 
 <div id="login-btn">
-    <button className="btn"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+    <button className="btn"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
 </div>
 
 </header>
@@ -82,7 +82,7 @@ const Signup = () => {
       <form method="POST">
         <div className="user-details">
           <div className="input-box">
-            <span className="details">Full Name</span>
+            <span className="details">Full name</span>
             <input type="text" name="name" id="name" value={user.name} onChange={handleInputs} placeholder="Enter your name"  />
           </div>
           {/* <div className="input-box">
@@ -95,7 +95,7 @@ const Signup = () => {
           </div>
           <div className="input-box">
             <span className="details">Phone Number</span>
-            <input type="text" name="phone" id="phone" value={user.phone} onChange={handleInputs} placeholder="Enter your number" />
+            <input type="text" name="phone" id="phone" value={user.phone} onChange={handleInputs} placeholder="Enter your phone number" />
           </div>
           <div className="input-box">
             <span className="details">Password</span>

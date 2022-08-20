@@ -12,12 +12,12 @@ const ExploreSaleCar = () => {
         
         if(state){
             return <div> 
-                <button className="btn"><NavLink className="nav-link" to="/signout">logout</NavLink></button>      
+                <button className="btn"><NavLink className="nav-link" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button className="btn"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+                    <button className="btn"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -58,7 +58,7 @@ const ExploreSaleCar = () => {
     const handleClick = () =>{
         if(alertDiv.style.display === "none"){
             alertDiv.style.display = "flex"
-            window.alert("Please signin to buy the car!");
+            window.alert("Please sign in to buy a car!");
         }
         else{
             alertDiv.style.display = "flex"
@@ -80,7 +80,7 @@ const ExploreSaleCar = () => {
 
             <header className="header">
             <div id="menu-btn" className="fas fa-bars"></div>
-            <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+            <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
 
             <nav className="navbar">
                 <NavLink  to="/">Home</NavLink>
@@ -93,8 +93,8 @@ const ExploreSaleCar = () => {
             </header>
 
         <div id="alertDiv" >
-            <p>Please signin or create an account to buy your favourite car</p>
-            <button className='btn' onClick={hideAlert}>OK</button>
+            <p>Please sign in or create an account to buy your favourite car</p>
+            <button className='btn' onClick={hideAlert}>Ok</button>
         </div>
 
 

@@ -42,12 +42,12 @@ const Salecarreports = () => {
         
       if(adminState){
           return <div> 
-              <button className="logoutbtnDash"><NavLink className="nav-link" to="/adminsignout">logout</NavLink></button>      
+              <button className="logoutbtnDash"><NavLink className="nav-link" to="/adminsignout">Logout</NavLink></button>      
           </div>
       }
       else{
           return <div>  
-                  <button className="logoutbtnDash"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+                  <button className="logoutbtnDash"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
                   
               </div>
       }
@@ -61,7 +61,7 @@ const Salecarreports = () => {
   <div className="sidebar">
     <div className="logo-details">
       <i className='bx bxl-c-plus-plus'></i>
-      <span className="logo_name">Cars Club</span>
+      <span className="logo_name">The Wheel Deal</span>
     </div>
       <ul className="nav-links">
         {/* <li className="active"> */}
@@ -80,13 +80,13 @@ const Salecarreports = () => {
         <li>
             <NavLink className="dashlinks" to="/getsalecarsforadmin">
             <i className='bx bx-box' ></i>
-            <span className="allLinks_name">Available SaleCars</span>
+            <span className="allLinks_name">Available Sale Cars</span>
             </NavLink>
         </li>
         <li>
             <NavLink className="dashlinks" to="/getrentcarsforadmin">
             <i className='bx bx-box' ></i>
-            <span className="allLinks_name">Available RentCars</span>
+            <span className="allLinks_name">Available Rent Cars</span>
             </NavLink>
         </li>
         <li>
@@ -131,7 +131,7 @@ const Salecarreports = () => {
       
       <div className="profile-details">
         {/* <img src="/image/profile.jpg" alt=""/> */}
-        <span className="admin_name">Asif Anwar</span>
+        <span className="admin_name">Admin</span>
         <i className='bx bx-chevron-down' ></i>
       </div>
     </nav>
@@ -161,10 +161,10 @@ const Salecarreports = () => {
                 <tr>
                     <td >{allsoldItems.brand}</td>
                     <td >{allsoldItems.model}</td>
-                    <td >{allsoldItems.retailPricePerItem} Rs</td>
+                    <td >{allsoldItems.retailPricePerItem} </td>
                     <td >{allsoldItems.quantity}</td>
-                    <td >{allsoldItems.totalPrice} Rs</td>
-                    <td >{allsoldItems.totalIncome} Rs</td>                    
+                    <td >{allsoldItems.totalPrice} </td>
+                    <td >{allsoldItems.totalIncome} </td>                    
                 </tr> 
             
             </tbody>

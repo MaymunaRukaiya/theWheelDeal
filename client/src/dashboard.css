@@ -10,28 +10,29 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: white;
+  background: #28282B;
   transition: all 0.5s ease;
   
 }
 .sidebar.active{
-  width: 60px;
+  width: 90px;
 }
 .sidebar .logo-details{
   height: 80px;
-  display: flex;
-  align-items: center;
+  padding-top: 30px;
+  padding-left:25px;
 }
 .sidebar .logo-details i{
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
-  color: #52f8ab;
+  color: #a0bbdf;
   min-width: 60px;
   text-align: center;
   cursor: pointer;
+
 }
 .sidebar .logo-details .logo_name{
-  color: #52f8ab;
+  color: #a0bbdf;
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
@@ -46,7 +47,7 @@
   display: inline-block;
   margin-top: 1rem;
   padding:.8rem 3rem;
-  background: #52f8ab;
+  background: #a0bbdf;
   color: white;
   cursor: pointer;
   font-size: 1.7rem;
@@ -56,31 +57,30 @@
 }
 
 .logoutbtnDash:hover{
-  box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
-  background: #00ff88;
-  color: white;
+  box-shadow: 4px 4px 8px 4px rgba(247, 244, 244, 0.185);
+  background: white;
+  color:#28282B ;
 }
 
 
 .sidebar .nav-links{
-  margin-top: 10px;
+  margin-top: 40px;
 }
 .sidebar .nav-links li{
   position: relative;
   list-style: none;
-  height: 50px;
+  height: 55px;
 }
 .sidebar .nav-links li a{
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
+  padding-left: 30px;;
   text-decoration: none;
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li.active{
   background: white;
-  color: #52f8ab;
+  color: #a0bbdf;
 }
 
 
@@ -88,7 +88,7 @@
   box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
   border-radius: 7px;
   padding : 10px 10px;
-  background-color: #52f8ab;
+  background-color: #a0bbdf;
   color: white !important;
 }
 
@@ -99,19 +99,19 @@
   min-width: 60px;
   text-align: center;
   font-size: 18px;
-  color: #52f8ab;
+  color: #a0bbdf;
 }
 
 
 .dashlinks{
-  color: #52f8ab;
+  color: #a0bbdf;
   font-size: 15px;
 }
 
 
 
 .sidebar .nav-links li.allLinks_name{
-  color: #52f8ab;
+  color: #a0bbdf;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -128,7 +128,7 @@
 
 .home-section{
   position: relative;
-  background: #52f8ab;
+  background: #a0bbdf;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
@@ -142,16 +142,16 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  background: white;
+  background: #28282B;
   display: flex;
   align-items: center;
   position: fixed;
   width: calc(100% - 240px);
   left: 240px;
   z-index: 100;
-  padding: 0 20px;
+  padding: 0 50px;
   transition: all 0.5s ease;
-  color: #52f8ab;
+  color:#a0bbdf ;
 }
 .sidebar.active ~ .home-section nav{
   left: 60px;
@@ -165,7 +165,7 @@
   cursor: pointer;
 }
 nav .sidebar-button i{
-  font-size: 35px;
+  font-size: 90px;
   margin-right: 10px;
 }
 .home-section nav .search-box{
@@ -179,8 +179,8 @@ nav .search-box input{
   height: 100%;
   width: 100%;
   outline: none;
-  background: #F5F6FA;
-  border: 2px solid #EFEEF1;
+  background: #a0bbdf;
+  border: 2px solid #a0bbdf;
   border-radius: 6px;
   font-size: 18px;
   padding: 0 15px;
@@ -189,23 +189,23 @@ nav .search-box .bx-search{
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #2697FF;
+  background: #a0bbdf;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 4px;
   line-height: 40px;
   text-align: center;
-  color: #fff;
+  color: #a0bbdf;
   font-size: 22px;
   transition: all 0.4 ease;
 }
 .home-section nav .profile-details{
   display: flex;
   align-items: center;
-  background: white;
-  border: 2px solid #52f8ab;
-  border-radius: 6px;
+  background: #a0bbdf ;
+  border: 2px solid #28282B;
+  border-radius: 10px;
   height: 50px;
   min-width: 190px;
   padding: 0 15px 0 2px;
@@ -218,9 +218,10 @@ nav .profile-details img{
   object-fit: cover;
 }
 nav .profile-details .admin_name{
+  padding-left:30px ;
   font-size: 15px;
-  font-weight: 500;
-  color: #52f8ab;
+  font-weight: 600;
+  color: #4872e6;
   margin: 0 30px;
   white-space: nowrap;
 }
@@ -242,46 +243,44 @@ nav .profile-details i{
 }
 
 .addcarform label{
-  float: left;
-  color: #52f8ab;
+  padding: 9px;
+  color: #28282B;
   font-size: 15px;
   border: 1px ;
   padding: 5;
   margin: 8px 0px;
-  width: 80px;
+  width: 120px;
 }
 
 
 .addcarform input{
-  border: 1px solid #52f8ab;
+  border: 1px solid #85a2c8;
   border-radius: 3px;
   padding: 2px;
   margin: 8px 0px;
-  width: 200px;
+  width: 330px;
 }
 
 .addsalecarform label{
-  float: left;
-  color: #52f8ab;
+  padding: 9px;
+  color: #28282B;
   font-size: 15px;
   border: 1px;
-  padding: 4;
   margin: 8px 0px;
-  width: 110px;
+  width: 120px;
 }
 
 .addsalecarform input{
-  border: 1px solid #52f8ab;
+  border: 1px solid #85a2c8;
   border-radius: 3px;
   padding: 4px;
   margin: 5px 0px;
-  width: 200px;
+  width: 330px;
 }
 
 
-
 .salecartableDiv{
-  background-color : #52f8ab;
+  background-color :#28282B ;
   box-shadow: 0 4px 8px 0 white;
   border : 1px solid white;
   border-radius: 7px;
@@ -305,12 +304,12 @@ nav .profile-details i{
 
 .salecartable td{
   border: 1px solid white; 
-  padding: 8px;
+  padding: 9px;
 }
 
 
 .userMessagesli{
-  background-color : #52f8ab;
+  background-color : #28282B;
   box-shadow: 0 4px 8px 0 white;
   border : 1px solid white;
   border-radius: 7px;
@@ -347,7 +346,7 @@ nav .profile-details i{
 .home-content .box .indicator i{
   height: 20px;
   width: 20px;
-  background: #8FDACB;
+  background: whitesmoke;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
@@ -356,7 +355,7 @@ nav .profile-details i{
   margin-right: 5px;
 }
 .box .indicator i.down{
-  background: #e87d88;
+  background: #48b4e0;
 }
 .home-content .box .indicator .text{
   font-size: 12px;
@@ -374,16 +373,16 @@ nav .profile-details i{
   margin: -15px 0 0 6px;
 }
 .home-content .box .cart.two{
-   color: #2BD47D;
-   background: #C0F2D8;
+   color: #20568f;
+   background: #a0bbdf;
  }
 .home-content .box .cart.three{
-   color: #ffc233;
-   background: #ffe8b3;
+   color: #20568f;
+   background: #a0bbdf;
  }
 .home-content .box .cart.four{
-   color: #e05260;
-   background: #f7d4d7;
+   color: #20568f;
+   background:#a0bbdf ;
  }
 .home-content .total-order{
   font-size: 20px;
@@ -412,7 +411,7 @@ nav .profile-details i{
 .sales-boxes .box .title{
   font-size: 24px;
   font-weight: 500;
-  color: #52f8ab;
+  
   /* margin-bottom: 10px; */
 }
 .sales-boxes .sales-details li.topic{
@@ -436,7 +435,7 @@ nav .profile-details i{
 }
 .sales-boxes .box .button a{
   color: #fff;
-  background: #0A2558;
+  background: #a0bbdf;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;

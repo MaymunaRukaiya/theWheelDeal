@@ -24,7 +24,7 @@ module.exports = router.post('/contact', authenticate, async (req, res) =>{
             
             await userContact.save();
 
-            res.status(201).json({message: "user contact successfull"});
+            res.status(201).json({message: "User contact successful"});
         }
 
     } catch (error) {

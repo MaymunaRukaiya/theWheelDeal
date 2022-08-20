@@ -147,15 +147,15 @@ const Carreviews = () => {
 
 
         if(data.status === 500 || !data){
-            window.alert("reviews not submited");
-            console.log("reviews not submited");
+            window.alert("Review not submitted");
+            console.log("Review not submitted");
         }
         else if(data.status===201){
-            window.alert("reviews submited");
+            window.alert("Review submitted");
             setUserData({...userData, message:""});
         }
         else{
-            window.alert("reviews submited");
+            window.alert("Review submitted");
             setUserData({...userData, message:""});
         }
     }
@@ -167,12 +167,12 @@ const Carreviews = () => {
         
         if(state){
             return <div> 
-                <button ><NavLink className="btn" to="/signout">logout</NavLink></button>      
+                <button ><NavLink className="btn" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button ><NavLink className="btn" to="/signin">login</NavLink></button>
+                    <button ><NavLink className="btn" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -183,7 +183,7 @@ const Carreviews = () => {
         <>
              <header className="header">
                 <div id="menu-btn" className="fas fa-bars"></div>
-                <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+                <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
                 <nav className="navbar">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/buycar">Sale Cars</NavLink>

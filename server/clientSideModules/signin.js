@@ -11,7 +11,7 @@ module.exports = router.post('/signin', async(req, res)=>{
         let token;
         const { email , password } = req.body;
         if(!email || !password){
-            return res.status(400).json({error: "invalid crededntials"})
+            return res.status(400).json({error: "Invalid Credentials"})
         }
 
         const userSignin = await User.findOne({ email: email });
@@ -27,13 +27,13 @@ module.exports = router.post('/signin', async(req, res)=>{
                 })
 
                 if(!isSame){
-                    res.status(400).json({error: "invalid crededntials"})    
+                    res.status(400).json({error: "Invalid Credentials"})    
                 }else{
-                    res.json({message: "user signin successfully"})
+                    res.json({message: "User sign in successful"})
                 }
         
         }else{
-            res.status(400).json({error: "invalid crededntials"})
+            res.status(400).json({error: "Invalid Credentials"})
         }
 
         

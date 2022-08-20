@@ -13,7 +13,7 @@ module.exports =  router.post('/signinAdmin', async(req, res)=>{
         const { adminName , adminPassword } = req.body;
         
         if(!adminName || !adminPassword){
-            return res.status(400).json({error: "invalid crededntials"})
+            return res.status(400).json({error: "Invalid Credentials"})
         }
         
         const adminSignin = await Admin.findOne({ adminName: adminName });
@@ -29,13 +29,13 @@ module.exports =  router.post('/signinAdmin', async(req, res)=>{
                 })
                 
                 if(!isSame){
-                    res.status(400).json({error: "invalid crededntials"})    
+                    res.status(400).json({error: "Invalid Credentials"})    
                 }else{
-                    res.json({message: "user signin successfully"})
+                    res.json({message: "User sign in successful"})
                 }
                 
         }else{
-            res.status(400).json({error: "invalid crededntials"})
+            res.status(400).json({error: "Invalid Credentials"})
         }
        
         

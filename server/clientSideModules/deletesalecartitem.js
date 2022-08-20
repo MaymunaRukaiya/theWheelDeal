@@ -17,8 +17,8 @@ module.exports = router.post('/deleteitemfromcart', async (req, res)=>{
     }
     const findMessage = await Cart.updateOne({_id: findcart._id}, {$set: {cartItems: new_cart}})
     if(findMessage.nModified){
-    res.json({message: "item deleted"})
+    res.json({message: "Item deleted"})
     }else{
-        res.json({error: "item not deleted"})
+        res.json({error: "Item not deleted"})
     }
 })

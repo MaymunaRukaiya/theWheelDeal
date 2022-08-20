@@ -140,15 +140,15 @@ const Rentcarreviews = () => {
 
 
         if(data.status === 500 || !data){
-            window.alert("reviews not submited");
-            console.log("reviews not submited");
+            window.alert("Review not submitted");
+            console.log("Review not submitted");
         }
         else if(data.status===201){
-            window.alert("reviews submited");
+            window.alert("Review submitted");
             setUserData({...userData, message:""});
         }
         else{
-            window.alert("reviews submited");
+            window.alert("Review submitted");
             setUserData({...userData, message:""});
         }
     }
@@ -161,12 +161,12 @@ const Rentcarreviews = () => {
         
         if(state){
             return <div> 
-                <button ><NavLink className="btn" to="/signout">logout</NavLink></button>      
+                <button ><NavLink className="btn" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button ><NavLink className="btn" to="/signin">login</NavLink></button>
+                    <button ><NavLink className="btn" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -177,7 +177,7 @@ const Rentcarreviews = () => {
         <>
             <header className="header">
                 <div id="menu-btn" className="fas fa-bars"></div>
-                <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+                <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
                 <nav className="navbar">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/buycar">Sale Cars</NavLink>
@@ -217,7 +217,7 @@ const Rentcarreviews = () => {
 
             <div className="row">
                 <form method="POST">
-                    <h3>write your reviews</h3>
+                    <h3>Write your reviews</h3>
                     <input type="text" name="name" value={userData.name} onChange={handleInputs} placeholder="your name" className="box"/>
                     <input type="email" name="email" value={userData.email} onChange={handleInputs} placeholder="your email" className="box"/>
                     <textarea placeholder="your reviews" name="message" value={userData.message} onChange={handleInputs} className="box" cols="30" rows="10"></textarea>

@@ -19,7 +19,7 @@ module.exports = router.post('/stripeRentPay', async (req, res, next) =>{
     .then(customer =>{
         stripe.charges.create({
             amount: amount,
-            currency: 'usd',
+            currency: 'Tk',
             customer: customer.id,
             receipt_email: token.email
         }, {idempotencyKey})

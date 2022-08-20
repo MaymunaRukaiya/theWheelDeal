@@ -20,7 +20,7 @@ module.exports = router.post('/deleteMessagefromdashboard', adminAuthentication,
         
     } catch (error) {
         console.log(error);
-        res.status(400).json({error: "Can't delete message"})
+        res.status(400).json({error: "Can not delete message"})
     }
     
 

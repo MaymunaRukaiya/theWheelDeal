@@ -14,19 +14,19 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #52f8ab;
+  background-color:  #28282B;
   /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
 }
 .firstcontainer{
   max-width: 700px;
   width: 100%;
-  background-color: #fff;
+  background-color: #a0bbdf;
   padding: 25px 30px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 10px rgba(250, 249, 249, 0.816);
 }
 .firstcontainer .titled{
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 500;
   position: relative;
 }
@@ -38,7 +38,7 @@
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #52f8ab, #b3dfca);
+  background: linear-gradient(135deg, #060113, #839ec1);
 }
 .content form .user-details{
   display: flex;
@@ -59,7 +59,7 @@ form .input-box span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 15px;
   text-transform:none;
   border-radius: 5px;
   padding-left: 15px;
@@ -69,7 +69,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #52f8ab;
+  border-color:#a0bbdf ;
 }
  form .gender-details .gender-title{
   font-size: 20px;
@@ -113,18 +113,18 @@ form .input-box span.details{
    width: 100%;
    border-radius: 5px;
    border: none;
-   color: #fff;
+   color: #171717;
    font-size: 18px;
    font-weight: 500;
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   /* background: linear-gradient(165deg, #f0f1f1, #4af3a4); */
-   background: #55f0a8;
+   background: white;
  }
  form .button input:hover{
+  color:#a0bbdf;
   transform: scale(0.99);
-  background: #4af3a4;
+  background: #171717;
   }
  @media(max-width: 584px){
  .container{

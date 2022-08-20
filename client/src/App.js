@@ -1,5 +1,5 @@
+import './App.css';
 import React, { createContext, useReducer } from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
 import Home from "./components/Home";
 import Signin from "./components/Signin";

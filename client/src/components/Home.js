@@ -65,10 +65,10 @@ const Home = () => {
         const data = await res.json();
 
         if(!data){
-            console.log("message not sent");
+            console.log("Message not sent");
         }
         else{
-            alert("Message send")
+            alert("Message sent")
             setUserData({...userData, message:""});
         }
     }
@@ -79,12 +79,12 @@ const Home = () => {
         
         if(state){
             return <div> 
-                <button ><NavLink className="btn" to="/signout">logout</NavLink></button>      
+                <button ><NavLink className="btn" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button ><NavLink className="btn" to="/signin">login</NavLink></button>
+                    <button ><NavLink className="btn" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -101,13 +101,13 @@ const Home = () => {
 
             <div id="menu-btn" className="fas fa-bars"></div>
 
-            <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+            <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
         
 
             <nav className="navbar">
                 <NavLink  to="/">Home</NavLink>
-                <NavLink  to="/exploreSaleCars">Explore-Sale-Cars</NavLink>
-                <NavLink  to="/exploreRentCars">Explore-Rent-Cars</NavLink>
+                <NavLink  to="/exploreSaleCars">Explore Cars for Sale</NavLink>
+                <NavLink  to="/exploreRentCars">Explore Cars for Rent</NavLink>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -122,12 +122,12 @@ const Home = () => {
 
 <section className="home" id="home">
 
-<h3 data-speed="-2" className="home-parallax">find your car</h3>
+<h3 data-speed="-2" className="home-parallax">Find your car</h3>
 
-<img data-speed="5" className="home-parallax" src="/image/home-img.png" alt=""/>
+<img data-speed="5" className="home-parallax" src="/image/home-img1.png" alt=""/>
 
-<NavLink className="btn" to="/exploreSaleCars">Explore-Sale-Cars</NavLink>{" "}
-<NavLink className="btn" to="/exploreRentCars">Explore-Rent-Cars</NavLink>
+<NavLink className="btn" to="/exploreSaleCars">Explore Cars for Sale</NavLink>{" "}
+<NavLink className="btn" to="/exploreRentCars">Explore Cars for Rent</NavLink>
 
 </section>
 
@@ -136,32 +136,32 @@ const Home = () => {
 <div className="icons">
     <i className="fas fa-home"></i>
     <div className="content">
-        <h3>150+</h3>
-        <p>branches</p>
+        <h3>50+</h3>
+        <p>Branches</p>
     </div>
 </div>
 
 <div className="icons">
     <i className="fas fa-car"></i>
     <div className="content">
-        <h3>4770+</h3>
-        <p>cars sold</p>
+        <h3>770+</h3>
+        <p>Cars sold</p>
     </div>
 </div>
 
 <div className="icons">
     <i className="fas fa-users"></i>
     <div className="content">
-        <h3>320+</h3>
-        <p>happy clients</p>
+        <h3>520+</h3>
+        <p>Happy clients</p>
     </div>
 </div>
 
 <div className="icons">
     <i className="fas fa-car"></i>
     <div className="content">
-        <h3>1500+</h3>
-        <p>news cars</p>
+        <h3>700+</h3>
+        <p>New cars</p>
     </div>
 </div>
 
@@ -169,7 +169,7 @@ const Home = () => {
 
 <section className="services" id="services">
 
-<h1 className="heading"> our <span>services</span> </h1>
+<h1 className="heading"> Our <span>services</span> </h1>
 
 <div className="box-container">
 
@@ -205,7 +205,7 @@ const Home = () => {
 
 <section className="contact" id="contact">
 
-<h1 className="heading"><span>contact</span> us</h1>
+<h1 className="heading"><span>Contact</span> us</h1>
 
 <div className="row">
 
@@ -229,44 +229,44 @@ const Home = () => {
 <div className="box-container">
 
     <div className="box">
-        <h3>our branches</h3>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> Pakistan </a>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> japan </a>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> france </a>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> russia </a>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> USA </a>
+        <h3>Our Branches</h3>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Dhaka </a>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Chittagong </a>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Barisal </a>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Rajshahi </a>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Cox's Bazar </a>
     </div>
 
     <div className="box">
-        <h3>quick links</h3>
-        <a href="#"> <i className="fas fa-arrow-right"></i> home </a>
-        <a href="#"> <i className="fas fa-arrow-right"></i> vehicles </a>
-        <a href="#"> <i className="fas fa-arrow-right"></i> services </a>
-        <a href="#"> <i className="fas fa-arrow-right"></i> featured </a>
-        <a href="#"> <i className="fas fa-arrow-right"></i> reviews </a>
-        <a href="#"> <i className="fas fa-arrow-right"></i> contact </a>
+        <h3>Quick Links</h3>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Home </a>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Vehicles </a>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Services </a>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Featured </a>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Reviews </a>
+        <a href="#"> <i className="fas fa-arrow-right"></i> Contact </a>
     </div>
 
     <div className="box">
-        <h3>contact info</h3>
-        <a href="#"> <i className="fas fa-phone"></i> +123-456-7890 </a>
-        <a href="#"> <i className="fas fa-phone"></i> +111-222-3333 </a>
-        <a href="#"> <i className="fas fa-envelope"></i> asifkhan@gmail.com </a>
-        <a href="#"> <i className="fas fa-map-marker-alt"></i> Karachi, Pakistan - 27400 </a>
+        <h3>Contact Info</h3>
+        <a href="#"> <i className="fas fa-phone"></i> +8801610698192 </a>
+        <a href="#"> <i className="fas fa-phone"></i> +880-234-785 </a>
+        <a href="#"> <i className="fas fa-envelope"></i> admin@gmail.com </a>
+        <a href="#"> <i className="fas fa-map-marker-alt"></i> Dhaka, Bangladesh - 1229</a>
     </div>
 
     <div className="box">
-        <h3>contact info</h3>
-        <a href="#"> <i className="fab fa-facebook-f"></i> facebook </a>
-        <a href="#"> <i className="fab fa-twitter"></i> twitter </a>
-        <a href="#"> <i className="fab fa-instagram"></i> instagram </a>
-        <a href="#"> <i className="fab fa-linkedin"></i> linkedin </a>
-        <a href="#"> <i className="fab fa-pinterest"></i> pinterest </a>
+        <h3>Contact Info</h3>
+        <a href="https://www.facebook.com/maymuna.rukaiya"> <i className="fab fa-facebook-f"></i> Facebook </a>
+        <a href="#"> <i className="fab fa-twitter"></i> Twitter </a>
+        <a href="#"> <i className="fab fa-instagram"></i> Instagram </a>
+        <a href="#"> <i className="fab fa-linkedin"></i> Linkedin </a>
+        <a href="#"> <i className="fab fa-pinterest"></i> Pinterest </a>
     </div>
 
 </div>
 
-<div className="credit"> created by asif anwar | all rights reserved </div>
+<div className="credit"> Created by Maymuna Rukaiya || All Rights Reserved </div>
 
 </section>
 

@@ -74,7 +74,7 @@ module.exports = router.post('/addrentcartocart', authenticate, async(req, res)=
 
     } catch (error) {
         console.log(error)
-        res.status(500).send("something went wrong");
+        res.status(500).send("Something went wrong");
     }
 
    

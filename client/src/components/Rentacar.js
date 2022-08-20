@@ -15,7 +15,7 @@ const Rentacar = () => {
         try {
 
             if(!state){
-                window.alert("Please signin to see all available cars for rent!")
+                window.alert("Please sign in to see all available cars for rent!")
                 history.push('/signin')
             }
 
@@ -127,7 +127,7 @@ const Rentacar = () => {
             window.alert("Something went wrong");
         }
         else{
-            window.alert("Item added. Please click on Go To cart to complete the purchase");
+            window.alert("Item added, Please click on Go to cart to complete the purchase");
         }
 
     }
@@ -139,12 +139,12 @@ const Rentacar = () => {
         
         if(state){
             return <div> 
-                <button ><NavLink className="btn" to="/signout">logout</NavLink></button>      
+                <button ><NavLink className="btn" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button ><NavLink className="btn" to="/signin">login</NavLink></button>
+                    <button ><NavLink className="btn" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -195,12 +195,12 @@ const Rentacar = () => {
         
             <header className="header">
                 <div id="menu-btn" className="fas fa-bars"></div>
-                <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+                <NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
                 <nav className="navbar">
                 <NavLink className="nav-link" to="/">Home</NavLink>
                 <NavLink to="/buycar">Sale Cars</NavLink>
                     
-                <NavLink className="nav-link" to="/rentcarcart">Go To Cart</NavLink>
+                <NavLink className="nav-link" to="/rentcarcart">Go to Cart</NavLink>
                 
                 <input type="text" name="name"  placeholder="Search Car" style={{ width: "30%", height: "8%"}}value={searchText} onChange={(e)=>setSearchText(e.target.value)}className="btn"/>
                 <button type="submit" onClick={searchTextBtn} className="btn"><i className="fa fa-search"></i></button>
@@ -223,7 +223,7 @@ const Rentacar = () => {
 
                             <div style={{display: "flex", gap: "15px"}}>
                             <button className='cardbtn' id={index}  onClick={showDetails}>Details</button><br/>
-                            <button className='cardbtn' id={index}  onClick={addToCart}>Add To Cart</button><br/>
+                            <button className='cardbtn' id={index}  onClick={addToCart}>Add to Cart</button><br/>
                             </div>
                         </div>,
 
@@ -239,20 +239,20 @@ const Rentacar = () => {
                             
                             <div style={{display: "flex", gap: "15px"}}>
                             <button className='cardbtn' ><NavLink className="nav-link" to={{pathname: '/rentcarreviews', state:{id: rentCarsData._id}}} >Car Reviews</NavLink></button>
-                            <button className='cardbtn' id = {index} onClick={showCar}>show car</button>
+                            <button className='cardbtn' id = {index} onClick={showCar}>Show car</button>
                             </div>
                         </div>,
 
                         <div className = "formDivRentcar"  key={index}>
 
                             <form method="POST" >
-                             <h3>Before click on proceed please enter for how many hours do you want to rent the car</h3><br/>   
+                             <h3>Before click on proceed, Please enter for how many hours do you want to rent the car?</h3><br/>   
                             <label htmlFor="lname">Rent Hours: </label><br/>
                             <input type="text"  className='cardbtn' name="rentforhours" value={rentHours} onChange={handleInputs} placeholder="Enter rent hours" /><br/>
                             
                             <input type="submit" className='cardbtn' value="Proceed" id={rentCarsData._id} onClick={proceedToCart}/>
                             </form> 
-                            <button className='cardbtn' id = {index} onClick={showCarAgain}>show car</button>    
+                            <button className='cardbtn' id = {index} onClick={showCarAgain}>Show car</button>    
                             
                         </div>]    
                    

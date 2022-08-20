@@ -17,7 +17,7 @@ module.exports = router.post('/stripePay', (req, res, next) =>{
     .then(customer =>{
         stripe.charges.create({
             amount: amount,
-            currency: 'usd',
+            currency: 'Tk',
             customer: customer.id,
             receipt_email: token.email
         }, {idempotencyKey})

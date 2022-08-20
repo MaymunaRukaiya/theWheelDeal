@@ -48,12 +48,12 @@ let carIdFromDashBoard;
         
     if(adminState){
         return <div> 
-            <button className="logoutbtnDash"><NavLink className="nav-link" to="/adminsignout">logout</NavLink></button>      
+            <button className="logoutbtnDash"><NavLink className="nav-link" to="/adminsignout">Logout</NavLink></button>      
         </div>
     }
     else{
         return <div>  
-                <button className="logoutbtnDash"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+                <button className="logoutbtnDash"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
                 
             </div>
     }
@@ -86,13 +86,13 @@ let carIdFromDashBoard;
         <li>
             <NavLink className="dashlinks" to="/getsalecarsforadmin">
             <i className='bx bx-box' ></i>
-            <span className="allLinks_name">Available SaleCars</span>
+            <span className="allLinks_name">Available Sale Cars</span>
             </NavLink>
         </li>
         <li>
             <NavLink className="dashlinks" to="/getrentcarsforadmin">
             <i className='bx bx-box' ></i>
-            <span className="allLinks_name">Available RentCars</span>
+            <span className="allLinks_name">Available Rent Cars</span>
             </NavLink>
         </li>
         <li>
@@ -137,7 +137,7 @@ let carIdFromDashBoard;
       
       <div className="profile-details">
         {/* <img src="/image/profile.jpg" alt=""/> */}
-        <span className="admin_name">Asif Anwar</span>
+        <span className="admin_name">Admin</span>
         <i className='bx bx-chevron-down' ></i>
       </div>
     </nav>
@@ -170,8 +170,8 @@ let carIdFromDashBoard;
                 <tr>
                     <td >{getCars.brand}</td>
                     <td >{getCars.model}</td>
-                    <td >{getCars.retailprice}Rs</td>
-                    <td >{getCars.price}Rs</td>  
+                    <td >{getCars.retailprice}</td>
+                    <td >{getCars.price}</td>  
                     <td >{getCars.quantity}</td>  
                     <td ><button id = {getCars._id} onClick={deleteUser} className="btn"><i className="fa fa-trash"></i></button></td> 
                 </tr>

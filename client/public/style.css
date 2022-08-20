@@ -33,13 +33,13 @@ html{
 
 section{
     padding:2rem 9%;
-    background-color:var(--green);
+    background-image: url("1.jpg");
 }
 
 .heading{
     padding-bottom: 2rem;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 45px;
     color:var(--white);
     
 }
@@ -803,18 +803,6 @@ section{
     font-size: 2rem;
     color:var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

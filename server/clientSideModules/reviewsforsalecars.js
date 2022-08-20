@@ -68,7 +68,7 @@ module.exports = router.post('/postcarreviews', authenticate, async (req, res)=>
                });
             }
             await findCarReview.save();
-            res.status(201).send({ message: "review submited successfully"});
+            res.status(201).send({ message: "Review submitted successfully"});
         }
         else{
             const newReview = new Salecarreviews({
@@ -82,7 +82,7 @@ module.exports = router.post('/postcarreviews', authenticate, async (req, res)=>
             });
 
             await newReview.save();
-            res.status(201).json({ message: "review submited successfully"});
+            res.status(201).json({ message: "Review submitted successfully"});
         }
     }
     catch(error) {

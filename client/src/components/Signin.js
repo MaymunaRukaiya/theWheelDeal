@@ -31,12 +31,12 @@ const Signin = () => {
         const data = res.json();
 
         if(res.status === 400 || !data){
-            window.alert("invalid Credentials");
+            window.alert("Invalid Credentials");
         }
         else{
 
             dispatch({type: "USER", payload:true})
-            window.alert("Signin Successfull");
+            window.alert("Sign in successful");
             history.push("/");
         }
     }
@@ -51,16 +51,16 @@ const Signin = () => {
 
 <div id="menu-btn" className="fas fa-bars"></div>
 
-<NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+<NavLink className="logo" to="/"> <span>The Wheel</span> Deal </NavLink>
 
 <nav className="navbar">
     <NavLink  to="/">Home</NavLink>
-    <NavLink  to="/exploreSaleCars">Explore-Sale-Cars</NavLink>
-    <NavLink  to="/exploreRentCars">Explore-Rent-Cars</NavLink>
+    <NavLink  to="/exploreSaleCars">Explore Cars for Sale</NavLink>
+    <NavLink  to="/exploreRentCars">Explore Cars for Rent</NavLink>
 </nav>
 
 <div id="login-btn">
-    <button className="btn"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+    <button className="btn"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
 </div>
 
 </header>
@@ -69,7 +69,7 @@ const Signin = () => {
                 <div className="firstcontainer">
                     <div className="titled"></div>
                         <div id = "usersignin" style = {{display:"block"}} className="content">
-                        <h2>Signin As User</h2>
+                        <h2>Sign in as User</h2>
                             <form method="POST">
                                 <div className="user-details">
           
@@ -90,8 +90,8 @@ const Signin = () => {
                                 </div>
                             </form>
       
-                            <h3> don't have an account <NavLink style={{color: "#52f8ab"}} to="/signup">create one</NavLink></h3>
-                            <button className="btn"><NavLink  to="/adminsignin">Signin As Admin</NavLink></button>
+                            <h3> Don't have an account? <NavLink to="/signup">Create one.</NavLink></h3>
+                            <button className="btn"><NavLink  to="/adminsignin">Sign in as Admin</NavLink></button>
                         </div>
                         
                      

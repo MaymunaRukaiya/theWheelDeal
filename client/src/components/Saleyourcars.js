@@ -12,12 +12,12 @@ const Saleyourcars = () => {
         
         if(state){
             return <div> 
-                <button className="btn"><NavLink className="nav-link" to="/signout">logout</NavLink></button>      
+                <button className="btn"><NavLink className="nav-link" to="/signout">Logout</NavLink></button>      
             </div>
         }
         else{
             return <div>  
-                    <button className="btn"><NavLink className="nav-link" to="/signin">login</NavLink></button>
+                    <button className="btn"><NavLink className="nav-link" to="/signin">Login</NavLink></button>
                     
                 </div>
         }
@@ -30,7 +30,7 @@ const Saleyourcars = () => {
 
             <header className="header">
             <div id="menu-btn" className="fas fa-bars"></div>
-            <NavLink className="logo" to="/"> <span>cars</span>Club </NavLink>
+            <NavLink className="logo" to="/"> <span>The Wheel Deal</span> Club </NavLink>
 
             <nav className="navbar">
                 <NavLink  to="/">Home</NavLink>
@@ -43,7 +43,7 @@ const Saleyourcars = () => {
             </header>
 
         <div className='salecartMaindiv'>
-            <h1 style={{marginTop: "250px", textAlign:"center", color:"white", fontSize:"100px"}}>Comming Soon!</h1>
+            <h1 style={{marginTop: "250px", textAlign:"center", color:"white", fontSize:"100px"}}>Coming Soon!</h1>
         </div>
         </>
     )
