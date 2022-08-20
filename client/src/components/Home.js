@@ -72,9 +72,6 @@ const Home = () => {
             setUserData({...userData, message:""});
         }
     }
-
-
-    
     const Loginbutton= () =>{
         
         if(state){
@@ -90,8 +87,6 @@ const Home = () => {
         }
     
     }
-
-
     return (
         
 
@@ -106,8 +101,8 @@ const Home = () => {
 
             <nav className="navbar">
                 <NavLink  to="/">Home</NavLink>
-                <NavLink  to="/exploreSaleCars">Explore Cars for Sale</NavLink>
-                <NavLink  to="/exploreRentCars">Explore Cars for Rent</NavLink>
+                <NavLink  to="/exploreSaleCars">Cars for Sale</NavLink>
+                <NavLink  to="/exploreRentCars">Cars for Rent</NavLink>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -117,8 +112,6 @@ const Home = () => {
 
         </header> 
 
-
-        
 
 <section className="home" id="home">
 
@@ -132,7 +125,6 @@ const Home = () => {
 </section>
 
 <section className="icons-container">
-
 <div className="icons">
     <i className="fas fa-home"></i>
     <div className="content">
@@ -176,14 +168,14 @@ const Home = () => {
     <div className="box">
         <i className="fas fa-car"></i>
         <h3>Buy your dream car</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <p>Your drive with our care</p>
         <button className="btn"><NavLink to="/buycar">Check Cars</NavLink></button>
     </div>
 
     <div className="box">
         <i className="fas fa-car"></i>
         <h3>Rent A Car</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <p>We expert in car rental</p>
         <button className="btn"><NavLink to="/rentcar">Check Cars</NavLink></button>
     </div>
 
@@ -191,7 +183,7 @@ const Home = () => {
     <div className="box">
     <i className="fas fa-car"></i>
         <h3>Sale your old car</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <p>The best solution for vehicles</p>
         <button className="btn"><NavLink to="/saleyourcar">Check Cars</NavLink></button>
     </div>
 
@@ -208,8 +200,6 @@ const Home = () => {
 <h1 className="heading"><span>Contact</span> us</h1>
 
 <div className="row">
-
-    {/* <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1632137920043!5m2!1sen!2sin" allowFullScreen="" loading="lazy"></iframe> */}
 
     <form method="POST">
         <h3>get in touch</h3>
