@@ -23,25 +23,6 @@ const PORT = process.env.PORT;
 
 
 
-// app.get('/', (req, res) =>{
-//     res.send(`Home page`);
-// });
-
-// app.get('/about', middleware, (req, res) =>{
-//     res.send(`About page`);
-// });
-
-// app.get('/contact', (req, res) =>{
-//     res.send(`Contact page`);
-// });
-
-// app.get('/signin', (req, res) =>{
-//     res.send(`Signin page`);
-// });
-
-// app.get('/signup', (req, res) =>{
-//     res.send(`Signup Page`);
-// });
 
 
 

@@ -54,10 +54,6 @@ router.use(require('../clientSideModules/paymentmethoderentcars'))
 router.use(require('../clientSideModules/updatedbafetrrentedcar'))
 
 
-
-
-
-
 // Admin Side Modules---for--- SignIn, SignOut
 router.use(require('../adminSideModules/signinadmin'))
 router.use(require('../adminSideModules/signoutadmin'))
